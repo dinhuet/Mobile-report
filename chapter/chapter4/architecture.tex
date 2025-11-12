@@ -1,7 +1,8 @@
 \setcounter{section}{0}
 \section{Kiến trúc hệ thống}
 \label{sec:architecture}
-Hệ thống được xây dựng theo kiến trúc Client-Server và kiến trúc 3 lớp (3-Layer Architecture).
+
+Hệ thống được xây dựng theo kiến trúc Client-Server.
 
 \begin{figure}[H]
 	\centering
@@ -9,38 +10,7 @@ Hệ thống được xây dựng theo kiến trúc Client-Server và kiến tr�
 	\caption{Kiến trúc của hệ thống}
 \end{figure}
 
-\subsection{Client}
-Client là một thành phần chính trong kiến trúc hệ thống. Client nằm thiết bị của người dùng. Nhiệm vụ của Client cung cấp giao diện để người dùng tương tác với hệ thống, ghi nhận dữ liệu đầu và hiển thị dữ liệu của người dùng khi được yêu cầu.
+\input{chapter/chapter4/client/client.tex}
 
-\subsection{Server}
-Server, hay Back-end server là thành phần trung tâm của hệ thống,
-cung cấp tài nguyên, dữ liệu và dịch vụ cho Client khi có yêu cầu. Server là thành
-phần thực hiện các tác vụ chuyên môn, dựa trên dữ liệu do Client cung cấp và
-gửi dữ liệu kết quả ngược lại cho Client.
 
-Server cần được sẵn sàng hoạt động và lắng nghe yêu cầu từ Client trong thời gian
-dài. 
-
-Server và Client giao tiếp với nhau thông qua giao thức HTTPS.
-
-Server được thiết kế dựa trên kiến trúc 3 lớp, bao gồm 3
-tầng (lớp) với mức độ trừu tượng khác nhau.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{figures/server-architecture.png}
-	\caption{Kiến trúc của server backend}
-\end{figure}
-
-\subsubsection{Presentation layer}
-Presentation layer là tầng trên cùng và trừu tượng nhất trong kiến trúc. Tầng này
-chịu trách nhiệm tương tác trực tiếp với Client thông qua việc đặt ra định dạng dữ liệu,
-xác thực dữ liệu, xác định dữ liệu trả về và metadata như Response code, v.v...
-
-\subsubsection{Bussiness layer}
-Bussiness layer là thành phần tiếp theo của kiến trúc server. Tầng này bao gồm các
-thành phần đảm nhiệm việc xử lí các tác vụ nặng tính chuyên môn.
-
-\subsubsection{Data access layer}
-Tầng Data access là tầng thấp nhất. Tầng này bao gồm các thành phần đảm nhiệm
-vai trò tương tác trực tiếp với CSDL và mô hình dữ liệu đấy thành các class.
+\input{chapter/chapter4/server/server.tex}
