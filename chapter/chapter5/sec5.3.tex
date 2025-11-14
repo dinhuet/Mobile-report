@@ -1,0 +1,13 @@
+\section{Scrape Website Tool}
+
+Scrape Website là một tool được xây dựng để lấy dữ liệu từ các trang web dựa trên link mà LLM cung cấp.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/scrape_website_flow.png} 
+  \caption{Luồng hoạt động của scrape website tool trong hệ thống chatbot AI}
+  \label{fig:scrape_website_flow}
+\end{figure}
+
+Tool Scrape Website sẽ nhận đàu vào là một link từ LLM trả về khi dùng duckduckgo tool để tìm kiếm.
+Tool sẽ cào website và trả về toàn bộ text. Lúc này text còn nhiều dữ liệu dư thừa vì ở dạng html, nên chúng tôi sẽ sử dụng framework BeautifulSoup để lọc dữ liệu và trả về chuối chỉ chứa nội dung của trang web.

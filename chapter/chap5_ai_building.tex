@@ -9,8 +9,8 @@ Chúng tôi xây dựng một hệ thống chatbot agent kết hợp với các 
 mạng để cung cấp dữ liệu cho agent với model chính là gemini-2.5-pro. Ngoài ra chúng tôi cũng tự làm thêm tool phát nhạc khi người dùng yêu cầu hoặc có mong muốn nghe nhạc trong app của mình.
 
 Chatbot agent được xây dựng chủ yếu bằng framework mạnh mẽ cho agent là Langgraph và một số các thư viện cần thiết khác để phục vụ cho việc triển khai hệ thống dễ dàng hơn.
-
-
+Langgraph giúp chhungs tôi xây dựng Chatbot agent theo dạng đồ thị (graph) với các node đại diện cho các thành phần như tool hay agent. Ngoài ra việc dùng Langgraph giúp chúng tôi có thể dễ dàng mở rộng hơn vì nó tối ưu và dễ dàng phát triển để mở
+rộng thành hệ thống multi-agent trong tương lai. 
 
 Dưới đây là hình ảnh mô tả luồng hoạt đồng cơ bản của hệ thống chatbot agent mà chúng tôi xây dựng:
 \begin{figure}
@@ -27,3 +27,4 @@ Lúc này tool Scape Website sẽ trả về input mong muốn cho chatbot. Và 
 Các phần sau đây sẽ mô tả thêm về tool duckduckgo, scrape website.
 \input{chapter/chapter5/sec5.1.tex}
 \input{chapter/chapter5/sec5.2.tex}
+\input{chapter/chapter5/sec5.3.tex}

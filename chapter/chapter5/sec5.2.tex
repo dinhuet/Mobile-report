@@ -1,13 +1,18 @@
-\section{Scrape Website Tool}
+\section{Duckduckgo Tool}
 
-Scrape Website là một tool được xây dựng để lấy dữ liệu từ các trang web dựa trên link mà LLM cung cấp.
+Duckduckgo (viết tắt là DDG) là một công cụ tìm kiếm, cho phép bạn tra cứu thông tin mà không bị theo dõi hay thu thập dữ liệu cá nhân.
+Chatbot sẽ gửi yêu cầu tìm kiếm đến Duckduckgo thông qua chức năng function calling. Duckduckgo sẽ nhận đầu vào là một chuỗi kí tự tìm kiếm và rồi sẽ truy vấn để tìm ra 5 link liên quan nhất và trả về cho agent.
+Dưới đây là hình ảnh mô tả luồng hoạt động của duckduckgo tool trong hệ thống chatbot agent mà chúng tôi phát triển
 
 \begin{figure}
-  \centering
-  \includegraphics[width=0.6\textwidth]{figures/scrape_website_flow.png} 
-  \caption{Luồng hoạt động của scrape website tool trong hệ thống chatbot AI}
-  \label{fig:scrape_website_flow}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/duckduckgo_flow.png} 
+	\caption{Luồng hoạt động của duckduckgo tool trong hệ thống chatbot AI}
+	\label{fig:duckduckgo_flow}
 \end{figure}
 
-Tool Scrape Website sẽ nhận đàu vào là một link từ LLM trả về khi dùng duckduckgo tool để tìm kiếm.
-Tool sẽ cào website và trả về toàn bộ text. Lúc này text còn nhiều dữ liệu dư thừa vì ở dạng html, nên chúng tôi sẽ sử dụng framework BeautifulSoup để lọc dữ liệu và trả về chuối chỉ chứa nội dung của trang web.
+Khi LLM quyết định cần tìm kiếm, gọi Duckduckgo tool kèm theo query. 
+Rồi mở context manager \texttt{with DDGS as ddgs} khởi tạo session DuckDuckGo search.
+Sau đó gọi hàm \texttt{ddgs.search(query, max\_results=5)} 
+để lấy 5 link liên quan nhất đến \texttt{query}.
+Sau đó thực thi và trả về tối đa 5 kết quả tìm kiếm phù hợp nhất. Và sau đó LLM nhận được các link và sẽ quyết định sẽ lấy nội dung của link nào cần thiết cho yêu cầu của người dùng.
