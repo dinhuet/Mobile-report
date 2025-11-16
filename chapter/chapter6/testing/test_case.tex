@@ -198,194 +198,194 @@ POST /favorites/delete
 POST /auth/logout  &
 none \\
 \hline
-\hypertarget{target name}{anchor text} &
-Đăng nhập 
-\hypertarget{tc:ui-sign-up-successfully}{Giao diện đăng kí người dùng} & Kiểm thử giao diện đăng kí người dùng thành công & Người dùng đăng kí email: "23021558@vnu.edu.vn", password: "12345678h", confirmPassword: "12345678h", firstname: "Hoang", lastname: "Doan" & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast thông báo "register\_successfully" \\
-\hline
-\hypertarget{tc:ui-sign-in-successfully}{Giao diện đăng nhập người dùng} & Kiểm thử giao diện đăng nhập người dùng thành công & Người dùng đăng nhập email: "23021558@vnu.edu.vn", password: "12345678h" & Màn hình chuyển đến trang chủ, hiển thị Toast "Login successfully!" \\
-\hline
-\hypertarget{tc:ui-sign-in-unsuccessfully}{Giao diện đăng nhập người dùng - sai mật khẩu} & Kiểm thử giao diện đăng nhập người dùng với mật khẩu sai & Người dùng đăng nhập email: "23021558@vnu.edu.vn", password: "1234567" & Hiển thị thông báo lỗi "Incorrect email or password" \\
-\hline
-\hypertarget{tc:ui-sign-up-navigation}{Điều hướng giao diện đăng kí người dùng} & Kiểm thử điều hướng giữa các giao diện đăng kí & Người dùng nhấn vào nút "Next" trên giao diện đăng kí email hoặc mật khẩu để chuyển sang giao diện tiếp theo và ấn biểu tượng "Back" để quay lại giao diện trước đó & Giao diện chuyển sang giao diện tiếp theo hoặc quay lại giao diện trước đó tương ứng \\
-\hline
-\hypertarget{tc:ui-forget-password-enter email}{Giao diện quên mật khẩu - nhập email} & Kiểm thử giao diện quên mật khẩu khi nhập email & Người dùng nhập email: "23021558@vnu.edu.vn" và ấn nút "Gửi mã OTP" & Màn hình chuyển sang giao diện nhập mã OTP, hiển thị thông báo gửi mã OTP thành công \\
-\hline
-\hypertarget{tc:ui-forget-password-enter-otp}{Giao diện quên mật khẩu - nhập OTP} & Kiểm thử giao diện quên mật khẩu khi nhập mã OTP & Người dùng nhập mã OTP đúng: "123456" và ấn nút xác nhận & Màn hình chuyển sang giao diện tạo mật khẩu mới\\
-\hline
-\hypertarget{tc:ui-forget-password-changePassword}{Giao diện quên mật khẩu - tạo mật khẩu mới} & Kiểm thử giao diện quên mật khẩu khi tạo mật khẩu mới & Người dùng nhập mật khẩu mới: "12345678h", confirmPassword: "12345678h" và ấn nút "Xác nhận" & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast "Change password successfully" \\
-\hline
-\hypertarget{tc:ui-home}{Giao diện màn hình chính} & Kiểm thử giao diện màn hình chính hiển thị đúng các bài hát được đề xuất & Người dùng đăng nhập thành công & Giao diện hiển thị đúng các bài hát được đề xuất \\
-\hline
-\hypertarget{tc:ui-search-track}{Giao diện tìm kiếm bài hát} & Kiểm thử giao diện tìm kiếm bài hát & Người dùng nhập từ khóa "Taylor" vào thanh tìm kiếm & Giao diện hiển thị danh sách các bài hát liên quan đến từ khóa "Taylor", cụ thể là các bài hát "Love Story", "The Fate of Ophelia" \\
-\hline
-\hypertarget{tc:ui-search-track}{Giao diện tìm kiếm bài hát - không có kết quả} & Kiểm thử giao diện tìm kiếm bài hát khi không có kết quả & Người dùng nhập từ khóa "abcdefghijklmnop" vào thanh tìm kiếm & Giao diện hiển thị thông báo "Không tìm thấy kết quả" \\
-\hline
-\hypertarget{tc:ui-play-track}{Giao diện phát nhạc } & Kiểm thử giao diện phát bài hát & Người dùng chọn bài hát "Love Story" & Giao diện chuyển sang giao diện phát bài hát, hiển thị đúng thông tin bài hát "Love Story", bài hát bắt đầu phát \\
-\hline
-\hypertarget{tc:ui-play-and-pause}{Nút tạm dừng} & Kiểm thử nút tạm dừng & Người dùng nhấn nút "Pause" trên giao diện  đang phát bài "Love Story" & Bài hát được tạm dừng, nút ấn cũng được thay đổi trạng thái tương ứng thành nút "Play" \\
-\hline
-\hypertarget{tc:ui-next-track}{Nút chuyển bài tiếp} & Kiểm thử nút bài hát tiếp theo & Người dùng nhấn nút bài hát tiếp theo trên giao diện phát bài "Love Story" & Giao diện chuyển sang bài hát tiếp theo "The Fate of Ophelia", bài hát bắt đầu phát \\
-\hline
-\hypertarget{tc:ui-previous-track}{Nút chuyển bài trước} & Kiểm thử nút chuyển bài trước & Người dùng nhấn nút bài hát trước trên giao diện phát bài "The Fate of Ophelia" & Giao diện chuyển sang bài hát trước "Love Story", bài hát bắt đầu phát \\
-\hline
-\hypertarget{tc:ui-favorite-button}{Nút thêm vào mục yêu thích} & Kiểm thử nút thêm bài hát vào mục yêu thích & Người dùng nhấn nút yêu thích trên giao diện phát bài "Love Story" & Bài hát "Love Story" được thêm vào mục yêu thích, nút yêu thích chuyển sang có màu \\
-\hline
-\hypertarget{tc:ui-shuffle-button}{Nút phát ngẫu nhiên/lặp lại} & Kiểm thử nút phát ngẫu nhiên/lặp lại & Người dùng nhấn nút phát ngẫu nhiên/lặp lại trên giao diện phát bài "Love Story" & Chế độ phát lặp lại được kích hoạt do mặc định là ngẫu nhiên, nút ấn cũng được thay đổi thành không màu \\
-\hline
-\hypertarget{tc:ui-favorites}{Giao diện các bài hát yêu thích} & Kiểm thử giao diện danh sách bài hát yêu thích hiển thị đúng & Người dùng truy cập vào mục yêu thích từ thanh điều hướng & Giao diện hiển thị đúng danh sách các bài hát yêu thích của người dùng \\
-\hline
-\hypertarget{tc:delete-favorites}{Xóa bài hát khỏi danh sách yêu thích} & Kiểm thử chức năng xóa bài hát khỏi danh sách yêu thích & Người dùng truy cập giao diện yêu thích, ấn biểu tượng trái tim bên cạnh bài "Love Story" & Bài hát "Love Story" được xóa khỏi danh sách yêu thích, giao diện cập nhật lại danh sách yêu thích với bài "Love Story" đã được xóa \\
-\hline
-\hypertarget{tc:history}{Bài hát đã nghe gần đây} & Kiểm thử giao diện bài hát đã nghe gần đây & Người dùng nghe các bài hát theo thứ tự "Love Story", "The Fate of Ophelia" và "Từng là" & Trên màn hình chính xuất hiện dòng "Recently played" với 3 bài hát vừa nghe \\
-\hline
-\hypertarget{tc:profile}{Giao diện thông tin cá nhân của người dùng} & Kiểm thử giao diện thông tin cá nhân hiển thị đúng & Người dùng truy cập vào mục thông tin cá nhân từ màn hình chính & Giao diện hiển thị đúng thông tin cá nhân của người dùng, bao gồm tên, ảnh đại diện và email cũng như các nút chức năng đổi thông tin, đổi mật khẩu, đổi giao diện, đổi ngôn ngữ và đăng xuất \\
-\hline  
-\hypertarget{tc:logout}{Đăng xuất người dùng} & Kiểm thử chức năng đăng xuất người dùng & Người dùng nhấn nút đăng xuất từ mục thông tin cá nhân & Người dùng được đăng xuất khỏi hệ thống, màn hình chuyển về màn hình bắt đầu \\
-\hline
-\hypertarget{tc:change_avatar_step1}{Đổi ảnh đại diện - Bước 1} & Kiểm thử chức năng đổi ảnh đại diện & Người dùng nhấn vào ảnh đại diện hiện tại & Màn hình hiện ra cho phép người dùng chọn ảnh từ thư viện hoặc chụp một ảnh mới từ camera \\
-\hline
-\hypertarget{tc:change_avatar_step2}{Đổi ảnh đại diện - Bước 2} & Kiểm thử chức năng đổi ảnh đại diện & Người dùng chọn một ảnh từ thư viện hoặc chụp một ảnh mới từ camera & Ảnh đại diện của người dùng được cập nhật thành công với ảnh vừa chọn/chụp \\
-\hline
-\hypertarget{tc:update_information}{Cập nhật thông tin cá nhân - thành công} & Kiểm thử chức năng cập nhật thông tin cá nhân & Người dùng nhập đầy đủ các thông tin bao gồm Họ:"Doan", Tên: "Hoang", số điện thoại: "012345678", địa chỉ: "Nam Dinh" & Thông tin cá nhân của người dùng được cập nhật thành công \\
-\hline
-\hypertarget{tc:update_information_missing_field}{Cập nhật thông tin cá nhân - không thành công} & Kiểm thử chức năng cập nhật thông tin cá nhân khi người dùng nhập thiếu thông tin & Người dùng chỉ nhập Họ: "Doan", Tên: "Hoang", để trống số điện thoại và địa chỉ & Hiển thị thông báo lỗi yêu cầu người dùng nhập đầy đủ thông tin \\
-\hline
-\hypertarget{tc:change_password}{Đổi mật khẩu - thành công} & Kiểm thử chức năng đổi mật khẩu & Người dùng ấn vào nút đổi mật khẩu, nhập mật khẩu cũ "12345678h", mật khẩu mới "1234567890h" & Hiển thị thông báo đổi mật khẩu thành công\\
-\hline
-\hypertarget{tc:change_theme}{Đổi giao diện} & Kiểm thử chức năng đổi giao diện & Người dùng ấn vào nút đổi giao diện từ mục thông tin cá nhân, ấn vào "Dark" & Giao diện của ứng dụng được chuyển đổi thành chế độ tối \\
-\hline
-\hypertarget{tc:change_language}{Đổi ngôn ngữ} & Kiểm thử chức năng đổi ngôn ngữ & Người dùng ấn vào nút đổi ngôn ngữ từ mục thông tin cá nhân, ấn vào "Tiếng Việt" & Ngôn ngữ của ứng dụng được chuyển đổi thành tiếng Việt \\
-\hline
-\end{longtable}
+% \hypertarget{target name}{anchor text} &
+% Đăng nhập 
+% \hypertarget{tc:ui-sign-up-successfully}{Giao diện đăng kí người dùng} & Kiểm thử giao diện đăng kí người dùng thành công & Người dùng đăng kí email: "23021558@vnu.edu.vn", password: "12345678h", confirmPassword: "12345678h", firstname: "Hoang", lastname: "Doan" & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast thông báo "register\_successfully" \\
+% \hline
+% \hypertarget{tc:ui-sign-in-successfully}{Giao diện đăng nhập người dùng} & Kiểm thử giao diện đăng nhập người dùng thành công & Người dùng đăng nhập email: "23021558@vnu.edu.vn", password: "12345678h" & Màn hình chuyển đến trang chủ, hiển thị Toast "Login successfully!" \\
+% \hline
+% \hypertarget{tc:ui-sign-in-unsuccessfully}{Giao diện đăng nhập người dùng - sai mật khẩu} & Kiểm thử giao diện đăng nhập người dùng với mật khẩu sai & Người dùng đăng nhập email: "23021558@vnu.edu.vn", password: "1234567" & Hiển thị thông báo lỗi "Incorrect email or password" \\
+% \hline
+% \hypertarget{tc:ui-sign-up-navigation}{Điều hướng giao diện đăng kí người dùng} & Kiểm thử điều hướng giữa các giao diện đăng kí & Người dùng nhấn vào nút "Next" trên giao diện đăng kí email hoặc mật khẩu để chuyển sang giao diện tiếp theo và ấn biểu tượng "Back" để quay lại giao diện trước đó & Giao diện chuyển sang giao diện tiếp theo hoặc quay lại giao diện trước đó tương ứng \\
+% \hline
+% \hypertarget{tc:ui-forget-password-enter email}{Giao diện quên mật khẩu - nhập email} & Kiểm thử giao diện quên mật khẩu khi nhập email & Người dùng nhập email: "23021558@vnu.edu.vn" và ấn nút "Gửi mã OTP" & Màn hình chuyển sang giao diện nhập mã OTP, hiển thị thông báo gửi mã OTP thành công \\
+% \hline
+% \hypertarget{tc:ui-forget-password-enter-otp}{Giao diện quên mật khẩu - nhập OTP} & Kiểm thử giao diện quên mật khẩu khi nhập mã OTP & Người dùng nhập mã OTP đúng: "123456" và ấn nút xác nhận & Màn hình chuyển sang giao diện tạo mật khẩu mới\\
+% \hline
+% \hypertarget{tc:ui-forget-password-changePassword}{Giao diện quên mật khẩu - tạo mật khẩu mới} & Kiểm thử giao diện quên mật khẩu khi tạo mật khẩu mới & Người dùng nhập mật khẩu mới: "12345678h", confirmPassword: "12345678h" và ấn nút "Xác nhận" & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast "Change password successfully" \\
+% \hline
+% \hypertarget{tc:ui-home}{Giao diện màn hình chính} & Kiểm thử giao diện màn hình chính hiển thị đúng các bài hát được đề xuất & Người dùng đăng nhập thành công & Giao diện hiển thị đúng các bài hát được đề xuất \\
+% \hline
+% \hypertarget{tc:ui-search-track}{Giao diện tìm kiếm bài hát} & Kiểm thử giao diện tìm kiếm bài hát & Người dùng nhập từ khóa "Taylor" vào thanh tìm kiếm & Giao diện hiển thị danh sách các bài hát liên quan đến từ khóa "Taylor", cụ thể là các bài hát "Love Story", "The Fate of Ophelia" \\
+% \hline
+% \hypertarget{tc:ui-search-track}{Giao diện tìm kiếm bài hát - không có kết quả} & Kiểm thử giao diện tìm kiếm bài hát khi không có kết quả & Người dùng nhập từ khóa "abcdefghijklmnop" vào thanh tìm kiếm & Giao diện hiển thị thông báo "Không tìm thấy kết quả" \\
+% \hline
+% \hypertarget{tc:ui-play-track}{Giao diện phát nhạc } & Kiểm thử giao diện phát bài hát & Người dùng chọn bài hát "Love Story" & Giao diện chuyển sang giao diện phát bài hát, hiển thị đúng thông tin bài hát "Love Story", bài hát bắt đầu phát \\
+% \hline
+% \hypertarget{tc:ui-play-and-pause}{Nút tạm dừng} & Kiểm thử nút tạm dừng & Người dùng nhấn nút "Pause" trên giao diện  đang phát bài "Love Story" & Bài hát được tạm dừng, nút ấn cũng được thay đổi trạng thái tương ứng thành nút "Play" \\
+% \hline
+% \hypertarget{tc:ui-next-track}{Nút chuyển bài tiếp} & Kiểm thử nút bài hát tiếp theo & Người dùng nhấn nút bài hát tiếp theo trên giao diện phát bài "Love Story" & Giao diện chuyển sang bài hát tiếp theo "The Fate of Ophelia", bài hát bắt đầu phát \\
+% \hline
+% \hypertarget{tc:ui-previous-track}{Nút chuyển bài trước} & Kiểm thử nút chuyển bài trước & Người dùng nhấn nút bài hát trước trên giao diện phát bài "The Fate of Ophelia" & Giao diện chuyển sang bài hát trước "Love Story", bài hát bắt đầu phát \\
+% \hline
+% \hypertarget{tc:ui-favorite-button}{Nút thêm vào mục yêu thích} & Kiểm thử nút thêm bài hát vào mục yêu thích & Người dùng nhấn nút yêu thích trên giao diện phát bài "Love Story" & Bài hát "Love Story" được thêm vào mục yêu thích, nút yêu thích chuyển sang có màu \\
+% \hline
+% \hypertarget{tc:ui-shuffle-button}{Nút phát ngẫu nhiên/lặp lại} & Kiểm thử nút phát ngẫu nhiên/lặp lại & Người dùng nhấn nút phát ngẫu nhiên/lặp lại trên giao diện phát bài "Love Story" & Chế độ phát lặp lại được kích hoạt do mặc định là ngẫu nhiên, nút ấn cũng được thay đổi thành không màu \\
+% \hline
+% \hypertarget{tc:ui-favorites}{Giao diện các bài hát yêu thích} & Kiểm thử giao diện danh sách bài hát yêu thích hiển thị đúng & Người dùng truy cập vào mục yêu thích từ thanh điều hướng & Giao diện hiển thị đúng danh sách các bài hát yêu thích của người dùng \\
+% \hline
+% \hypertarget{tc:delete-favorites}{Xóa bài hát khỏi danh sách yêu thích} & Kiểm thử chức năng xóa bài hát khỏi danh sách yêu thích & Người dùng truy cập giao diện yêu thích, ấn biểu tượng trái tim bên cạnh bài "Love Story" & Bài hát "Love Story" được xóa khỏi danh sách yêu thích, giao diện cập nhật lại danh sách yêu thích với bài "Love Story" đã được xóa \\
+% \hline
+% \hypertarget{tc:history}{Bài hát đã nghe gần đây} & Kiểm thử giao diện bài hát đã nghe gần đây & Người dùng nghe các bài hát theo thứ tự "Love Story", "The Fate of Ophelia" và "Từng là" & Trên màn hình chính xuất hiện dòng "Recently played" với 3 bài hát vừa nghe \\
+% \hline
+% \hypertarget{tc:profile}{Giao diện thông tin cá nhân của người dùng} & Kiểm thử giao diện thông tin cá nhân hiển thị đúng & Người dùng truy cập vào mục thông tin cá nhân từ màn hình chính & Giao diện hiển thị đúng thông tin cá nhân của người dùng, bao gồm tên, ảnh đại diện và email cũng như các nút chức năng đổi thông tin, đổi mật khẩu, đổi giao diện, đổi ngôn ngữ và đăng xuất \\
+% \hline  
+% \hypertarget{tc:logout}{Đăng xuất người dùng} & Kiểm thử chức năng đăng xuất người dùng & Người dùng nhấn nút đăng xuất từ mục thông tin cá nhân & Người dùng được đăng xuất khỏi hệ thống, màn hình chuyển về màn hình bắt đầu \\
+% \hline
+% \hypertarget{tc:change_avatar_step1}{Đổi ảnh đại diện - Bước 1} & Kiểm thử chức năng đổi ảnh đại diện & Người dùng nhấn vào ảnh đại diện hiện tại & Màn hình hiện ra cho phép người dùng chọn ảnh từ thư viện hoặc chụp một ảnh mới từ camera \\
+% \hline
+% \hypertarget{tc:change_avatar_step2}{Đổi ảnh đại diện - Bước 2} & Kiểm thử chức năng đổi ảnh đại diện & Người dùng chọn một ảnh từ thư viện hoặc chụp một ảnh mới từ camera & Ảnh đại diện của người dùng được cập nhật thành công với ảnh vừa chọn/chụp \\
+% \hline
+% \hypertarget{tc:update_information}{Cập nhật thông tin cá nhân - thành công} & Kiểm thử chức năng cập nhật thông tin cá nhân & Người dùng nhập đầy đủ các thông tin bao gồm Họ:"Doan", Tên: "Hoang", số điện thoại: "012345678", địa chỉ: "Nam Dinh" & Thông tin cá nhân của người dùng được cập nhật thành công \\
+% \hline
+% \hypertarget{tc:update_information_missing_field}{Cập nhật thông tin cá nhân - không thành công} & Kiểm thử chức năng cập nhật thông tin cá nhân khi người dùng nhập thiếu thông tin & Người dùng chỉ nhập Họ: "Doan", Tên: "Hoang", để trống số điện thoại và địa chỉ & Hiển thị thông báo lỗi yêu cầu người dùng nhập đầy đủ thông tin \\
+% \hline
+% \hypertarget{tc:change_password}{Đổi mật khẩu - thành công} & Kiểm thử chức năng đổi mật khẩu & Người dùng ấn vào nút đổi mật khẩu, nhập mật khẩu cũ "12345678h", mật khẩu mới "1234567890h" & Hiển thị thông báo đổi mật khẩu thành công\\
+% \hline
+% \hypertarget{tc:change_theme}{Đổi giao diện} & Kiểm thử chức năng đổi giao diện & Người dùng ấn vào nút đổi giao diện từ mục thông tin cá nhân, ấn vào "Dark" & Giao diện của ứng dụng được chuyển đổi thành chế độ tối \\
+% \hline
+% \hypertarget{tc:change_language}{Đổi ngôn ngữ} & Kiểm thử chức năng đổi ngôn ngữ & Người dùng ấn vào nút đổi ngôn ngữ từ mục thông tin cá nhân, ấn vào "Tiếng Việt" & Ngôn ngữ của ứng dụng được chuyển đổi thành tiếng Việt \\
+% \hline
+% \end{longtable}
 
-\subsection{Thực thi các ca kiểm thử}
-\begin{longtable}{|p{0.7cm}|p{3.0cm}|p{2.6cm}|p{2.6cm}|p{3.9cm}|p{1.2cm}|}
-\hline
-\textbf{STT} & \textbf{Tên ca kiểm thử} & \textbf{Ngày kiểm thử} & \textbf{Người kiểm thử} & \textbf{Kết quả thực tế} & \textbf{Trạng thái} \\
-\hline
-\endfirsthead
-\hline
-\textbf{STT} & \textbf{Tên ca kiểm thử} & \textbf{Ngày kiểm thử} & \textbf{Người kiểm thử} & \textbf{Kết quả thực tế} & \textbf{Trạng thái} \\
-\hline
-\endhead
+% \subsection{Thực thi các ca kiểm thử}
+% \begin{longtable}{|p{0.7cm}|p{3.0cm}|p{2.6cm}|p{2.6cm}|p{3.9cm}|p{1.2cm}|}
+% \hline
+% \textbf{STT} & \textbf{Tên ca kiểm thử} & \textbf{Ngày kiểm thử} & \textbf{Người kiểm thử} & \textbf{Kết quả thực tế} & \textbf{Trạng thái} \\
+% \hline
+% \endfirsthead
+% \hline
+% \textbf{STT} & \textbf{Tên ca kiểm thử} & \textbf{Ngày kiểm thử} & \textbf{Người kiểm thử} & \textbf{Kết quả thực tế} & \textbf{Trạng thái} \\
+% \hline
+% \endhead
 
-1  & \hyperlink{tc:dk-thanhcong}{Đăng ký} & 25/10/2025 & Trần Quang Đỉnh & Tài khoản mới thêm vào CSDL, chuyển hướng đến trang đăng nhập & Đạt \\
-\hline
-2  & \hyperlink{tc:dk-trungemail}{Đăng ký-trùng email} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Email already exists'' & Đạt \\
-\hline
-3  & \hyperlink{tc:dk-xnmk-sai}{Đăng ký-xác nhận mật khẩu sai} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Passwords do not match'' & Đạt \\
-\hline
-4  & \hyperlink{tc:dk-thieu-firstname}{Đăng ký-thiếu firstname} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-5  & \hyperlink{tc:dk-thieu-lastname}{Đăng ký-thiếu lastname} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-6  & \hyperlink{tc:dk-thieu-email}{Đăng ký-thiếu email} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-7  & \hyperlink{tc:dk-thieu-password}{Đăng ký-thiếu password} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-8  & \hyperlink{tc:dk-thieu-confirmpw}{Đăng ký-thiếu confirmPassword} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-9  & \hyperlink{tc:dn-sai-mk}{Đăng nhập-sai mật khẩu} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Incorrect password'' & Đạt \\
-\hline
-10 & \hyperlink{tc:dn-khongthay-email}{Đăng nhập-không tìm thấy email} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Email not found'' & Đạt \\
-\hline
-11 & \hyperlink{tc:dn-google}{Đăng nhập-Google} & 25/10/2025 & Trần Quang Đỉnh  & Đăng nhập thành công, chuyển hướng đến trang home & Đạt \\
-\hline
-12 & \hyperlink{tc:dn-thanhcong}{Đăng nhập} & 25/10/2025 & Trần Quang Đỉnh  & Đăng nhập thành công, chuyển hướng đến trang home & Đạt \\
-\hline
-13 & \hyperlink{tc:dx-thanhcong}{Đăng xuất} & 25/10/2025 & Trần Quang Đỉnh  & Đăng xuất thành công, chuyển hướng đến trang đăng nhập & Đạt \\
-\hline
-14 & \hyperlink{tc:qpw-gui-otp}{Quên mật khẩu-gửi otp} & 25/10/2025 & Trần Quang Đỉnh  & Hệ thống gửi OTP (vd ``7184920''), chuyển đến giao diện xác nhận OTP & Đạt \\
-\hline
-15 & \hyperlink{tc:qpw-otp-sai}{Quên mật khẩu-xác nhận otp sai} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Invalid OTP'' & Đạt \\
-\hline
-16 & \hyperlink{tc:qpw-otp-dung}{Quên mật khẩu-xác nhận otp} & 25/10/2025 & Trần Quang Đỉnh  & Xác nhận OTP thành công, chuyển đến giao diện tạo mật khẩu mới & Đạt \\
-\hline
-17 & \hyperlink{tc:qpw-tao-mk-moi}{Quên mật khẩu-tạo mật khẩu mới} & 25/10/2025 & Trần Quang Đỉnh  & Tạo mật khẩu mới thành công, chuyển đến giao diện đăng nhập & Đạt \\
-\hline
-18 & \hyperlink{tc:search-track}{Tìm kiếm bài hát} & 25/10/2025 & Trần Quang Đỉnh  & Hiển thị danh sách bài hát liên quan đến \textit{keyword} & Đạt \\
-\hline
-19 & \hyperlink{tc:doi-mk}{Sửa thông tin cá nhân-mật khẩu} & 25/10/2025 & Trần Quang Đỉnh  & Đổi mật khẩu thành công & Đạt \\
-\hline
-20 & \hyperlink{tc:doi-mk-sai}{Sửa thông tin cá nhân-sai mật khẩu} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi ``Incorrect password'' & Đạt \\
-\hline
-21 & \hyperlink{tc:doi-avatar}{Sửa thông tin cá nhân-avatar} & 25/10/2025 & Trần Quang Đỉnh  & Avatar cập nhật thành công & Đạt \\
-\hline
-22 & \hyperlink{tc:doi-profile}{Sửa thông tin cá nhân} & 25/10/2025 & Trần Quang Đỉnh  & Đổi thông tin thành công, giao diện hiện thông tin vừa cập nhật & Đạt \\
-\hline
-23 & \hyperlink{tc:doi-profile-missing-first}{Sửa thông tin cá nhân-thiếu firstname} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-24 & \hyperlink{tc:doi-profile-missing-last}{Sửa thông tin cá nhân-thiếu lastname} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-25 & \hyperlink{tc:doi-profile-missing-addr}{Sửa thông tin cá nhân-thiếu address} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-26 & \hyperlink{tc:doi-profile-missing-phone}{Sửa thông tin cá nhân-thiếu phone} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
-\hline
-27 & \hyperlink{tc:play-track}{Phát bài hát} & 26/10/2025 & Nguyễn Quốc Huy  & Chuyển sang giao diện bài hát, bài hát bắt đầu phát nhạc & Đạt \\
-\hline
-28 & \hyperlink{tc:add-fav}{Lưu bài hát yêu thích} & 26/10/2025 & Nguyễn Quốc Huy  & Bài hát được thêm vào danh sách yêu thích & Đạt \\
-\hline
-29 & \hyperlink{tc:del-fav}{Xóa bài hát yêu thích} & 26/10/2025 & Nguyễn Quốc Huy  & Bài hát được xóa khỏi danh sách yêu thích & Đạt \\
-\hline
-30 & \hyperlink{tc:view-recent}{Xem bài hát gần đây} & 26/10/2025 & Nguyễn Quốc Huy  & Danh sách bài hát đã nghe gần đây hiện trên giao diện home & Đạt \\
-\hline
-31 & \hyperlink{tc:perf-basic}{Hiệu năng - luồng cơ bản} & 12/11/2025 & Trần Quang Đỉnh  & Max $< 1.9$s, Fails: 0, RPM/s: 166 & Đạt \\
-\hline
-32 & \hyperlink{tc:ui-sign-up-successfully}{Giao diện đăng kí người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast thông báo "register\_successfully" & Đạt \\
-\hline
-33 & \hyperlink{tc:ui-sign-in-successfully}{Giao diện đăng nhập người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển đến trang chủ, hiển thị Toast "Login successfully!" & Đạt \\
-\hline  
-34 & \hyperlink{tc:ui-sign-in-unsuccessfully}{Giao diện đăng nhập người dùng - sai mật khẩu} & 03/11/2025 & Đoàn Minh Hoàng & Hiển thị thông báo lỗi "Incorrect email or password" & Đạt \\
-\hline  
-35 & \hyperlink{tc:ui-sign-up-navigation}{Điều hướng giao diện đăng kí người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện chuyển sang giao diện tiếp theo hoặc quay lại giao diện trước đó tương ứng & Đạt \\
-\hline  
-36 & \hyperlink{tc:ui-forget-password-enter email}{Giao diện quên mật khẩu - nhập email} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển sang giao diện nhập mã OTP, hiển thị thông báo gửi mã OTP thành công & Đạt \\
-\hline  
-37 & \hyperlink{tc:ui-forget-password-enter-otp}{Giao diện quên mật khẩu - nhập OTP} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển sang giao diện tạo mật khẩu mới & Đạt \\
-\hline
-38 & \hyperlink{tc:ui-forget-password-changePassword}{Giao diện quên mật khẩu - tạo mật khẩu mới} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast thông báo "Change password successfully!" & Đạt \\
-\hline
-39 & \hyperlink{tc:ui-home}{Giao diện màn hình chính} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị đúng các bài hát được đề xuất & Đạt \\
-\hline
-40 & \hyperlink{tc:ui-search-track}{Giao diện tìm kiếm bài hát} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị danh sách các bài hát liên quan đến từ khóa "Taylor", cụ thể là các bài hát "Love Story", "The Fate of Ophelia" & Đạt \\
-\hline
-41 & \hyperlink{tc:ui-search-track}{Giao diện tìm kiếm bài hát - không có kết quả} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị thông báo "Không tìm thấy kết quả" & Đạt \\
-\hline
-42 & \hyperlink{tc:ui-play-track}{Giao diện phát nhạc } & 05/11/2025 & Trần Trung Hậu & Giao diện chuyển sang giao diện phát bài hát, hiển thị đúng thông tin bài hát "Love Story", bài hát bắt đầu phát & Đạt \\
-\hline
-43 & \hyperlink{tc:ui-play-and-pause}{Nút tạm dừng} & 05/11/2025 & Trần Trung Hậu & Bài hát được tạm dừng, nút ấn cũng được thay đổi trạng thái tương ứng thành nút "Play" & Đạt \\
-\hline
-44 & \hyperlink{tc:ui-next-track}{Nút chuyển bài tiếp} & 05/11/2025 & Trần Trung Hậu & Giao diện chuyển sang bài hát tiếp theo "The Fate of Ophelia", bài hát bắt đầu phát & Đạt \\
-\hline
-45 & \hyperlink{tc:ui-previous-track}{Nút chuyển bài trước} & 05/11/2025 & Trần Trung Hậu & Giao diện chuyển sang bài hát trước "Love Story", bài hát bắt đầu phát & Đạt \\
-\hline
-46 & \hyperlink{tc:ui-favorite-button}{Nút thêm vào mục yêu thích} & 04/11/2025 & Đoàn Minh Hoàng & Bài hát "Love Story" được thêm vào mục yêu thích, nút yêu thích chuyển sang có màu & Đạt \\
-\hline
-47 & \hyperlink{tc:ui-shuffle-button}{Nút phát ngẫu nhiên/lặp lại} & 04/11/2025 & Đoàn Minh Hoàng & Chế độ phát lặp lại được kích hoạt do mặc định là ngẫu nhiên, nút ấn cũng được thay đổi thành không màu & Đạt \\
-\hline
-48 & \hyperlink{tc:ui-favorites}{Giao diện các bài hát yêu thích} & 04/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị đúng danh sách các bài hát yêu thích của người dùng & Đạt \\
-\hline
-49 & \hyperlink{tc:delete-favorites}{Xóa bài hát khỏi danh sách yêu thích} & 04/11/2025 & Đoàn Minh Hoàng & Bài hát "Love Story" được xóa khỏi danh sách yêu thích, giao diện cập nhật lại danh sách yêu thích với bài "Love Story" đã được xóa & Đạt \\
-\hline
-50 & \hyperlink{tc:history}{Bài hát đã nghe gần đây} & 05/11/2025 & Đoàn Minh Hoàng & Trên màn hình chính xuất hiện dòng "Recently played" với 3 bài hát "Love Story", "The Fate of Ophelia", "Từng là" & Đạt \\
-\hline
-51 & \hyperlink{tc:profile}{Giao diện thông tin cá nhân của người dùng} & 08/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị đúng thông tin cá nhân của người dùng, bao gồm tên, ảnh đại diện và email cũng như các nút chức năng đổi thông tin, đổi mật khẩu, đổi giao diện, đổi ngôn ngữ và đăng xuất & Đạt \\
-\hline
-52 & \hyperlink{tc:logout}{Đăng xuất người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Người dùng được đăng xuất khỏi hệ thống, màn hình chuyển về màn hình bắt đầu & Đạt \\
-\hline
-53 & \hyperlink{tc:change_avatar_step1}{Đổi ảnh đại diện - Bước 1} & 08/11/2025 & Đoàn Minh Hoàng & Màn hình hiện ra cho phép người dùng chọn ảnh từ thư viện hoặc chụp một ảnh mới từ camera & Đạt \\
-\hline  
-54 & \hyperlink{tc:change_avatar_step2}{Đổi ảnh đại diện - Bước 2} & 08/11/2025 & Đoàn Minh Hoàng & Ảnh đại diện của người dùng được cập nhật thành công với ảnh vừa chọn/chụp & Đạt \\
-\hline  
-55 & \hyperlink{tc:update_information}{Cập nhật thông tin cá nhân - thành công} & 08/11/2025 & Đoàn Minh Hoàng & Thông tin cá nhân của người dùng được cập nhật thành công & Đạt \\
-\hline
-56 & \hyperlink{tc:update_information_missing_field}{Cập nhật thông tin cá nhân - không thành công} & 08/11/2025 & Đoàn Minh Hoàng & Hiển thị thông báo lỗi yêu cầu người dùng nhập đầy đủ thông tin & Đạt \\
-\hline
-57 & \hyperlink{tc:change_password}{Đổi mật khẩu - thành công} & 08/11/2025 & Đoàn Minh Hoàng & Hiển thị thông báo đổi mật khẩu thành công & Đạt \\
-\hline
-58 & \hyperlink{tc:change_theme}{Đổi giao diện} & 08/11/2025 & Đoàn Minh Hoàng & Giao diện của ứng dụng được chuyển đổi thành chế độ tối & Đạt \\
-\hline
-59 & \hyperlink{tc:change_language}{Đổi ngôn ngữ} & 08/11/2025 & Đoàn Minh Hoàng & Ngôn ngữ của ứng dụng được chuyển đổi thành tiếng Việt & Đạt \\
-\hline
+% 1  & \hyperlink{tc:dk-thanhcong}{Đăng ký} & 25/10/2025 & Trần Quang Đỉnh & Tài khoản mới thêm vào CSDL, chuyển hướng đến trang đăng nhập & Đạt \\
+% \hline
+% 2  & \hyperlink{tc:dk-trungemail}{Đăng ký-trùng email} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Email already exists'' & Đạt \\
+% \hline
+% 3  & \hyperlink{tc:dk-xnmk-sai}{Đăng ký-xác nhận mật khẩu sai} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Passwords do not match'' & Đạt \\
+% \hline
+% 4  & \hyperlink{tc:dk-thieu-firstname}{Đăng ký-thiếu firstname} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 5  & \hyperlink{tc:dk-thieu-lastname}{Đăng ký-thiếu lastname} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 6  & \hyperlink{tc:dk-thieu-email}{Đăng ký-thiếu email} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 7  & \hyperlink{tc:dk-thieu-password}{Đăng ký-thiếu password} & 25/10/2025 & Trần Quang Đỉnh & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 8  & \hyperlink{tc:dk-thieu-confirmpw}{Đăng ký-thiếu confirmPassword} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 9  & \hyperlink{tc:dn-sai-mk}{Đăng nhập-sai mật khẩu} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Incorrect password'' & Đạt \\
+% \hline
+% 10 & \hyperlink{tc:dn-khongthay-email}{Đăng nhập-không tìm thấy email} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Email not found'' & Đạt \\
+% \hline
+% 11 & \hyperlink{tc:dn-google}{Đăng nhập-Google} & 25/10/2025 & Trần Quang Đỉnh  & Đăng nhập thành công, chuyển hướng đến trang home & Đạt \\
+% \hline
+% 12 & \hyperlink{tc:dn-thanhcong}{Đăng nhập} & 25/10/2025 & Trần Quang Đỉnh  & Đăng nhập thành công, chuyển hướng đến trang home & Đạt \\
+% \hline
+% 13 & \hyperlink{tc:dx-thanhcong}{Đăng xuất} & 25/10/2025 & Trần Quang Đỉnh  & Đăng xuất thành công, chuyển hướng đến trang đăng nhập & Đạt \\
+% \hline
+% 14 & \hyperlink{tc:qpw-gui-otp}{Quên mật khẩu-gửi otp} & 25/10/2025 & Trần Quang Đỉnh  & Hệ thống gửi OTP (vd ``7184920''), chuyển đến giao diện xác nhận OTP & Đạt \\
+% \hline
+% 15 & \hyperlink{tc:qpw-otp-sai}{Quên mật khẩu-xác nhận otp sai} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Invalid OTP'' & Đạt \\
+% \hline
+% 16 & \hyperlink{tc:qpw-otp-dung}{Quên mật khẩu-xác nhận otp} & 25/10/2025 & Trần Quang Đỉnh  & Xác nhận OTP thành công, chuyển đến giao diện tạo mật khẩu mới & Đạt \\
+% \hline
+% 17 & \hyperlink{tc:qpw-tao-mk-moi}{Quên mật khẩu-tạo mật khẩu mới} & 25/10/2025 & Trần Quang Đỉnh  & Tạo mật khẩu mới thành công, chuyển đến giao diện đăng nhập & Đạt \\
+% \hline
+% 18 & \hyperlink{tc:search-track}{Tìm kiếm bài hát} & 25/10/2025 & Trần Quang Đỉnh  & Hiển thị danh sách bài hát liên quan đến \textit{keyword} & Đạt \\
+% \hline
+% 19 & \hyperlink{tc:doi-mk}{Sửa thông tin cá nhân-mật khẩu} & 25/10/2025 & Trần Quang Đỉnh  & Đổi mật khẩu thành công & Đạt \\
+% \hline
+% 20 & \hyperlink{tc:doi-mk-sai}{Sửa thông tin cá nhân-sai mật khẩu} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi ``Incorrect password'' & Đạt \\
+% \hline
+% 21 & \hyperlink{tc:doi-avatar}{Sửa thông tin cá nhân-avatar} & 25/10/2025 & Trần Quang Đỉnh  & Avatar cập nhật thành công & Đạt \\
+% \hline
+% 22 & \hyperlink{tc:doi-profile}{Sửa thông tin cá nhân} & 25/10/2025 & Trần Quang Đỉnh  & Đổi thông tin thành công, giao diện hiện thông tin vừa cập nhật & Đạt \\
+% \hline
+% 23 & \hyperlink{tc:doi-profile-missing-first}{Sửa thông tin cá nhân-thiếu firstname} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 24 & \hyperlink{tc:doi-profile-missing-last}{Sửa thông tin cá nhân-thiếu lastname} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 25 & \hyperlink{tc:doi-profile-missing-addr}{Sửa thông tin cá nhân-thiếu address} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 26 & \hyperlink{tc:doi-profile-missing-phone}{Sửa thông tin cá nhân-thiếu phone} & 25/10/2025 & Trần Quang Đỉnh  & Thông báo lỗi: ``Field must not be blank'' & Đạt \\
+% \hline
+% 27 & \hyperlink{tc:play-track}{Phát bài hát} & 26/10/2025 & Nguyễn Quốc Huy  & Chuyển sang giao diện bài hát, bài hát bắt đầu phát nhạc & Đạt \\
+% \hline
+% 28 & \hyperlink{tc:add-fav}{Lưu bài hát yêu thích} & 26/10/2025 & Nguyễn Quốc Huy  & Bài hát được thêm vào danh sách yêu thích & Đạt \\
+% \hline
+% 29 & \hyperlink{tc:del-fav}{Xóa bài hát yêu thích} & 26/10/2025 & Nguyễn Quốc Huy  & Bài hát được xóa khỏi danh sách yêu thích & Đạt \\
+% \hline
+% 30 & \hyperlink{tc:view-recent}{Xem bài hát gần đây} & 26/10/2025 & Nguyễn Quốc Huy  & Danh sách bài hát đã nghe gần đây hiện trên giao diện home & Đạt \\
+% \hline
+% 31 & \hyperlink{tc:perf-basic}{Hiệu năng - luồng cơ bản} & 12/11/2025 & Trần Quang Đỉnh  & Max $< 1.9$s, Fails: 0, RPM/s: 166 & Đạt \\
+% \hline
+% 32 & \hyperlink{tc:ui-sign-up-successfully}{Giao diện đăng kí người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast thông báo "register\_successfully" & Đạt \\
+% \hline
+% 33 & \hyperlink{tc:ui-sign-in-successfully}{Giao diện đăng nhập người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển đến trang chủ, hiển thị Toast "Login successfully!" & Đạt \\
+% \hline  
+% 34 & \hyperlink{tc:ui-sign-in-unsuccessfully}{Giao diện đăng nhập người dùng - sai mật khẩu} & 03/11/2025 & Đoàn Minh Hoàng & Hiển thị thông báo lỗi "Incorrect email or password" & Đạt \\
+% \hline  
+% 35 & \hyperlink{tc:ui-sign-up-navigation}{Điều hướng giao diện đăng kí người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện chuyển sang giao diện tiếp theo hoặc quay lại giao diện trước đó tương ứng & Đạt \\
+% \hline  
+% 36 & \hyperlink{tc:ui-forget-password-enter email}{Giao diện quên mật khẩu - nhập email} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển sang giao diện nhập mã OTP, hiển thị thông báo gửi mã OTP thành công & Đạt \\
+% \hline  
+% 37 & \hyperlink{tc:ui-forget-password-enter-otp}{Giao diện quên mật khẩu - nhập OTP} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển sang giao diện tạo mật khẩu mới & Đạt \\
+% \hline
+% 38 & \hyperlink{tc:ui-forget-password-changePassword}{Giao diện quên mật khẩu - tạo mật khẩu mới} & 03/11/2025 & Đoàn Minh Hoàng & Màn hình chuyển về màn hình bắt đầu, hiển thị Toast thông báo "Change password successfully!" & Đạt \\
+% \hline
+% 39 & \hyperlink{tc:ui-home}{Giao diện màn hình chính} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị đúng các bài hát được đề xuất & Đạt \\
+% \hline
+% 40 & \hyperlink{tc:ui-search-track}{Giao diện tìm kiếm bài hát} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị danh sách các bài hát liên quan đến từ khóa "Taylor", cụ thể là các bài hát "Love Story", "The Fate of Ophelia" & Đạt \\
+% \hline
+% 41 & \hyperlink{tc:ui-search-track}{Giao diện tìm kiếm bài hát - không có kết quả} & 03/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị thông báo "Không tìm thấy kết quả" & Đạt \\
+% \hline
+% 42 & \hyperlink{tc:ui-play-track}{Giao diện phát nhạc } & 05/11/2025 & Trần Trung Hậu & Giao diện chuyển sang giao diện phát bài hát, hiển thị đúng thông tin bài hát "Love Story", bài hát bắt đầu phát & Đạt \\
+% \hline
+% 43 & \hyperlink{tc:ui-play-and-pause}{Nút tạm dừng} & 05/11/2025 & Trần Trung Hậu & Bài hát được tạm dừng, nút ấn cũng được thay đổi trạng thái tương ứng thành nút "Play" & Đạt \\
+% \hline
+% 44 & \hyperlink{tc:ui-next-track}{Nút chuyển bài tiếp} & 05/11/2025 & Trần Trung Hậu & Giao diện chuyển sang bài hát tiếp theo "The Fate of Ophelia", bài hát bắt đầu phát & Đạt \\
+% \hline
+% 45 & \hyperlink{tc:ui-previous-track}{Nút chuyển bài trước} & 05/11/2025 & Trần Trung Hậu & Giao diện chuyển sang bài hát trước "Love Story", bài hát bắt đầu phát & Đạt \\
+% \hline
+% 46 & \hyperlink{tc:ui-favorite-button}{Nút thêm vào mục yêu thích} & 04/11/2025 & Đoàn Minh Hoàng & Bài hát "Love Story" được thêm vào mục yêu thích, nút yêu thích chuyển sang có màu & Đạt \\
+% \hline
+% 47 & \hyperlink{tc:ui-shuffle-button}{Nút phát ngẫu nhiên/lặp lại} & 04/11/2025 & Đoàn Minh Hoàng & Chế độ phát lặp lại được kích hoạt do mặc định là ngẫu nhiên, nút ấn cũng được thay đổi thành không màu & Đạt \\
+% \hline
+% 48 & \hyperlink{tc:ui-favorites}{Giao diện các bài hát yêu thích} & 04/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị đúng danh sách các bài hát yêu thích của người dùng & Đạt \\
+% \hline
+% 49 & \hyperlink{tc:delete-favorites}{Xóa bài hát khỏi danh sách yêu thích} & 04/11/2025 & Đoàn Minh Hoàng & Bài hát "Love Story" được xóa khỏi danh sách yêu thích, giao diện cập nhật lại danh sách yêu thích với bài "Love Story" đã được xóa & Đạt \\
+% \hline
+% 50 & \hyperlink{tc:history}{Bài hát đã nghe gần đây} & 05/11/2025 & Đoàn Minh Hoàng & Trên màn hình chính xuất hiện dòng "Recently played" với 3 bài hát "Love Story", "The Fate of Ophelia", "Từng là" & Đạt \\
+% \hline
+% 51 & \hyperlink{tc:profile}{Giao diện thông tin cá nhân của người dùng} & 08/11/2025 & Đoàn Minh Hoàng & Giao diện hiển thị đúng thông tin cá nhân của người dùng, bao gồm tên, ảnh đại diện và email cũng như các nút chức năng đổi thông tin, đổi mật khẩu, đổi giao diện, đổi ngôn ngữ và đăng xuất & Đạt \\
+% \hline
+% 52 & \hyperlink{tc:logout}{Đăng xuất người dùng} & 03/11/2025 & Đoàn Minh Hoàng & Người dùng được đăng xuất khỏi hệ thống, màn hình chuyển về màn hình bắt đầu & Đạt \\
+% \hline
+% 53 & \hyperlink{tc:change_avatar_step1}{Đổi ảnh đại diện - Bước 1} & 08/11/2025 & Đoàn Minh Hoàng & Màn hình hiện ra cho phép người dùng chọn ảnh từ thư viện hoặc chụp một ảnh mới từ camera & Đạt \\
+% \hline  
+% 54 & \hyperlink{tc:change_avatar_step2}{Đổi ảnh đại diện - Bước 2} & 08/11/2025 & Đoàn Minh Hoàng & Ảnh đại diện của người dùng được cập nhật thành công với ảnh vừa chọn/chụp & Đạt \\
+% \hline  
+% 55 & \hyperlink{tc:update_information}{Cập nhật thông tin cá nhân - thành công} & 08/11/2025 & Đoàn Minh Hoàng & Thông tin cá nhân của người dùng được cập nhật thành công & Đạt \\
+% \hline
+% 56 & \hyperlink{tc:update_information_missing_field}{Cập nhật thông tin cá nhân - không thành công} & 08/11/2025 & Đoàn Minh Hoàng & Hiển thị thông báo lỗi yêu cầu người dùng nhập đầy đủ thông tin & Đạt \\
+% \hline
+% 57 & \hyperlink{tc:change_password}{Đổi mật khẩu - thành công} & 08/11/2025 & Đoàn Minh Hoàng & Hiển thị thông báo đổi mật khẩu thành công & Đạt \\
+% \hline
+% 58 & \hyperlink{tc:change_theme}{Đổi giao diện} & 08/11/2025 & Đoàn Minh Hoàng & Giao diện của ứng dụng được chuyển đổi thành chế độ tối & Đạt \\
+% \hline
+% 59 & \hyperlink{tc:change_language}{Đổi ngôn ngữ} & 08/11/2025 & Đoàn Minh Hoàng & Ngôn ngữ của ứng dụng được chuyển đổi thành tiếng Việt & Đạt \\
+% \hline
 \end{longtable}
 
