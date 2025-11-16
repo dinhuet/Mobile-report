@@ -1,5 +1,5 @@
 \subsection{Công cụ kiểm thử}
-Để đảm bảo chất lượng và tính ổn định của hệ thống nghe nhạc trực tuyến Spotube, yêu cầu đặt ra 
+Để đảm bảo chất lượng và tính ổn định của hệ thống nghe nhạc trực tuyến InsightTune, yêu cầu đặt ra 
 là phải xây dựng bộ kiểm thử, đảm bảo trải nghiệm tốt nhất cho người dùng khi sử dụng hệ thống. 
 Kiểm thử hệ thống được thực hiện nhằm đánh giá được toàn bộ chức năng, đảm bảo rằng tất cả các thành 
 phần cũng như module được tích hợp trong hệ thống hoạt động đồng bộ, nhất quán, đúng theo yêu cầu đặt ra.
@@ -29,5 +29,20 @@ của ứng dụng:
         \begin{itemize}
             \item Mục đích: Đánh giá khả năng chịu tải và độ ổn định của hệ thống khi có nhiều người dùng truy cập đồng thời.
             \item Áp dụng: JMeter được dùng để giả lập kịch bản nhiều người dùng cùng lúc thực hiện các hành động như đăng nhập, phát nhạc, và tìm kiếm. Kết quả kiểm thử giúp đo lường thời gian phản hồi của server và tìm ra các "nút thắt cổ chai" (bottleneck) về hiệu năng.
+        \end{itemize}
+\end{itemize}
+
+Bên cạnh kiểm thử hệ thống, nhóm cũng tiến hành kiểm thử giao diện người dùng để đảm bảo trải nghiệm người dùng mượt mà và tốt nhất.
+Để thực hiện kiểm thử giao diện, chúng tôi sử dụng một số công cụ như sau:
+\begin{itemize} 
+    \item Kiểm thử giao diện người dùng với Jetpack Compose Test:
+        \begin{itemize}
+            \item Mục đích: Đảm bảo giao diện người dùng với Jetpack Compose sẽ hiển thị chính sác và hoạt động đúng như mong đợi.
+            \item Áp dụng: Sử dụng createComposeRule để kiểm thử các giao diện không có trạng thái, các hàm onNodeWithTag và onNodeWithText để tìm các thành phần giao diện,các hàm assert để xác nhận giao diện hiển thị đúng.
+        \end{itemize}
+    \item Kiểm thử đơn vị (Unit Test) với JUnit4:
+        \begin{itemize}
+            \item Mục đích: Đảm bảo các hàm, lớp và logic hoạt động chính xác.
+            \item Áp dụng: Sử dụng các chú thích @Test, @Before, @Rule để định nghĩa các ca kiểm thử và thực thi các ca kiểm thử.
         \end{itemize}
 \end{itemize}
